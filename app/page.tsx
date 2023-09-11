@@ -27,19 +27,18 @@ const Home = () => {
               <h1 className="font-bold text-3xl">Hi,</h1>
               <div className="flex">
                 <h2 className="font-bold text-3xl items-center relative">
+                  I&apos;m{' '}
                   <span className="relative bg-clip-text text-transparent bg-gradient-to-br from-[#007CF0] to-[#00DFD8]">
-                    Kurnia Kharisma{' '}
+                    Kurnia Kharisma.{' '}
                   </span>
-                  <span className="text-white">here.</span>
-                  <div className="ml-2 inline-block translate-y-[4px] h-8 w-[3px] bg-gradient-to-br from-[#007CF0] to-[#00DFD8] typemark "></div>
+                  <div className="inline-block translate-y-[4px] h-8 w-[3px] bg-gradient-to-br from-[#007CF0] to-[#00DFD8] typemark "></div>
                 </h2>
               </div>
             </div>
             <h2 className="text-[#97979e]">
-              I&apos;m a Software engineer and UI/UX Designer based in
-              Indonesia. I have a great interest in full-stack development,
-              either it&apos;s a website, native application, and multi-platform
-              application.
+              a Software engineer and UI/UX Designer based in Indonesia. I have
+              a great interest in full-stack development, either it&apos;s a
+              website, native application, and multi-platform application.
             </h2>
           </div>
         </div>
@@ -125,11 +124,20 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <p>Or checkout my social media</p>
+        <p className="text-[#97979e]">Or checkout my social media</p>
         <div className="flex gap-5">
-          <BsGithub className="text-3xl" />
-          <BsInstagram className="text-3xl" />
-          <BsLinkedin className="text-3xl" />
+          <a target="_blank" href="https://github.com/kurniakun17">
+            <BsGithub className="text-3xl" />
+          </a>
+          <a target="_blank" href="https://instagram.com/kurniakun17">
+            <BsInstagram className="text-3xl" />
+          </a>
+          <a
+            target="_blank"
+            href="https://linkedin.com/in/kurnia-kharisma-agung-samiadjie-88b54a224/"
+          >
+            <BsLinkedin className="text-3xl" />
+          </a>
         </div>
       </div>
     </div>

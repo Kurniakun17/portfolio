@@ -15,7 +15,7 @@ const AppPreview = ({
   return (
     <div className="flex flex-col gap-3">
       <div className="flex justify-between items-center cursor-pointer">
-        <div className="flex gap-3 items-center">
+        <div className="flex gap-3 items-center w-full">
           <div className="h-12 w-12 bg-gradient-to-br from-purple-500 to-blue-500 rounded-xl"></div>
           <div className="flex flex-col flex-1">
             <h4 className="font-semibold text-lg w-[90%] ">{title}</h4>
