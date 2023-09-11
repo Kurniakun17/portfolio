@@ -1,27 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  scroll-behavior: smooth;
+  scroll-padding-top: 12px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+html {
+  @apply bg-gray-950;
+  color: white;
+}
+
+.navbar {
+  background: rgba(35, 35, 35, 0.96);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(35, 35, 35, 0.3);
+}
+
+.typemark {
+  animation: blink 1.2s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
