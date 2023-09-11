@@ -36,9 +36,10 @@ const Home = () => {
               </div>
             </div>
             <h2 className="text-[#97979e]">
-              I'm a Software engineer and UI/UX Designer based in Indonesia. I
-              have a great interest in full-stack development, either it's a
-              website, native application, and multi-platform application.
+              I&apos;m a Software engineer and UI/UX Designer based in
+              Indonesia. I have a great interest in full-stack development,
+              either it&apos;s a website, native application, and multi-platform
+              application.
             </h2>
           </div>
         </div>
