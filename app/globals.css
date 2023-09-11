@@ -20,7 +20,7 @@ html {
 }
 
 .typemark {
-  animation: blink 1.2s linear infinite;
+  animation: blink 1s linear infinite;
 }
 
 @keyframes blink {
@@ -32,5 +32,24 @@ html {
   }
   100% {
     opacity: 0;
+  }
+}
+
+.pulse-container {
+  animation: pulse 3s infinite ease-out;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0px 0px 52px #007cf0, 0px 0px 20px #00dfd8,
+      inset 0px 1px 1px rgba(255, 255, 255, 0.22);
+  }
+  70% {
+    box-shadow: 0px 0px 70px #007cf0, 0px 0px 40px #00dfd8,
+      inset 0px 1px 1px rgba(255, 255, 255, 0.22);
+  }
+  100% {
+    box-shadow: 0px 0px 52px #007cf0, 0px 0px 20px #00dfd8,
+      inset 0px 1px 1px rgba(255, 255, 255, 0.22);
   }
 }

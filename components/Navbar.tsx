@@ -1,5 +1,5 @@
 'use client';
-import { Zap, ChevronFirst, Briefcase } from 'lucide-react';
+import { Zap, ChevronFirst, Briefcase, Sparkles } from 'lucide-react';
 import React, { useState } from 'react';
 
 const Navbar = () => {
@@ -43,6 +43,26 @@ const Navbar = () => {
           }`}
         >
           Projects
+        </p>
+      </a>
+      
+      <a
+        onClick={() => {
+          setNavigation('Skills');
+        }}
+        href="#skills"
+        className="flex flex-col justify-center items-center "
+      >
+        <Sparkles
+          size={32}
+          color={navigation === 'Skills' ? '#3385ff' : '#9ca3af'}
+        />
+        <p
+          className={`${
+            navigation === 'Skills' ? 'text-blueAccent' : 'text-gray-400'
+          }`}
+        >
+          Skills
         </p>
       </a>
 

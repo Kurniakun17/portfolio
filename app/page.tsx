@@ -1,9 +1,9 @@
 import AppPreview from '@/components/AppPreview';
 import SkillChild from '@/components/SkillChild';
-import Image from 'next/image';
 import React from 'react';
 import Marquee from 'react-fast-marquee';
 import { FiMail } from 'react-icons/fi';
+import { BsGithub, BsLinkedin, BsInstagram } from 'react-icons/bs';
 
 const Home = () => {
   const css = `.marquee-container {
@@ -12,7 +12,7 @@ const Home = () => {
           `;
 
   return (
-    <div className="p-6 pb-[90px] flex flex-col gap-6">
+    <div className="p-6 pb-[112px] flex flex-col gap-6">
       <div className="flex flex-col gap-4">
         <div className="flex justify-between items-end">
           <div>
@@ -26,8 +26,11 @@ const Home = () => {
             <div>
               <h1 className="font-bold text-3xl">Hi,</h1>
               <div className="flex">
-                <h2 className="font-bold text-3xl  items-center bg-clip-text text-transparent bg-gradient-to-br from-[#007CF0] to-[#00DFD8]">
-                  Kurnia Kharisma <span className="text-white">here.</span>
+                <h2 className="font-bold text-3xl items-center relative">
+                  <span className="relative bg-clip-text text-transparent bg-gradient-to-br from-[#007CF0] to-[#00DFD8]">
+                    Kurnia Kharisma{' '}
+                  </span>
+                  <span className="text-white">here.</span>
                   <div className="ml-2 inline-block translate-y-[4px] h-8 w-[3px] bg-gradient-to-br from-[#007CF0] to-[#00DFD8] typemark "></div>
                 </h2>
               </div>
@@ -37,11 +40,6 @@ const Home = () => {
               have a great interest in full-stack development, either it's a
               website, native application, and multi-platform application.
             </h2>
-            <div className="flex justify-center">
-              <button className="justify-self-center   w-fit flex items-center gap-2 px-4 h-fit py-1 bg-gradient-to-r duration-200 transition-colors  from-[#007CF0] to-[#00DFD8] rounded-md">
-                Say Hi <FiMail />
-              </button>
-            </div>
           </div>
         </div>
       </div>
@@ -110,10 +108,27 @@ const Home = () => {
         </Marquee>
       </div>
 
-      <div className="p-6 bg-secondEle rounded-xl flex flex-col gap-6 overflow-x-hidden">
-        <div>
-          <div className="text-[#97979e] font-bold">Contact Me</div>
-          <div className="font-bold text-2xl">What are you waiting for</div>
+      <div className="p-6 bg-secondEle rounded-xl flex items-center flex-col gap-6 overflow-x-hidden">
+        <div className="w-full">
+          <div className="text-[#97979e] font-bold">
+            {/* eslint-disable-next-line react/no-unescaped-entities*/}
+            Let's get to know each other
+          </div>
+          <div className="font-bold text-2xl">Contact Me</div>
+        </div>
+        <div className="flex justify-center">
+          <div className="relative">
+            <div className="absolute pulse-container rounded-full blur-[2px] inset-0 scale-y-[60%] bg-gradient-to-r origin-center from-[#007CF0]/40 to-[#00DFD8]/40  "></div>
+            <button className="relative shadow-none justify-self-center w-fit flex items-center gap-2 px-4 h-fit py-1  duration-200 bg-gradient-to-r from-[#007CF0] to-[#00DFD8] rounded-full">
+              Say Hi <FiMail />
+            </button>
+          </div>
+        </div>
+        <p>Or checkout my social media</p>
+        <div className="flex gap-5">
+          <BsGithub className="text-3xl" />
+          <BsInstagram className="text-3xl" />
+          <BsLinkedin className="text-3xl" />
         </div>
       </div>
     </div>
