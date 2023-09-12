@@ -1,4 +1,5 @@
 import React from 'react';
+import Test from './Test';
 
 const HeroSection = () => {
   return (
@@ -6,7 +7,7 @@ const HeroSection = () => {
       <div className="flex justify-between items-end">
         <div>
           <p>SATURDAY 9 SEPTEMBER</p>
-          <h2 className="font-bold text-3xl">Today</h2>
+          <h2 className="font-bold text-3xl">Home</h2>
         </div>
         <div className="h-12 w-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-[500px]"></div>
       </div>
@@ -15,6 +16,7 @@ const HeroSection = () => {
           <div>
             <h1 className="font-bold text-3xl">Hi,</h1>
             <div className="flex">
+              {/* <Test /> */}
               <h2 className="font-bold text-3xl items-center relative">
                 I&apos;m{' '}
                 <span className="relative bg-clip-text text-transparent bg-gradient-to-br from-[#007CF0] to-[#00DFD8]">
