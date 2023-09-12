@@ -11,8 +11,16 @@ html {
   color: white;
 }
 
-.navbar {
+.glass {
   background: rgba(35, 35, 35, 0.96);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(35, 35, 35, 0.3);
+}
+
+.glassProject{
+    background: #c0c0c0f5;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
