@@ -1,11 +1,12 @@
 'use client';
-import { Zap, ChevronFirst, Briefcase, Sparkles } from 'lucide-react';
+import { Zap, ChevronFirst, Sparkles } from 'lucide-react';
 import React, { useState } from 'react';
-
+import { BsFillPersonFill } from 'react-icons/bs';
+import { FiMail } from 'react-icons/fi';
 const Navbar = () => {
   const [navigation, setNavigation] = useState('Home');
   return (
-    <div className="glass z-[100] sm:bottom-8 sm:w-[450px] sm:rounded-full sm:left-1/2 sm:-translate-x-1/2 p-4 px-12 flex justify-between gap-3 sm:gap-6 fixed bottom-0 w-full">
+    <div className="glass z-[100] sm:bottom-8 sm:w-[500px] sm:rounded-full sm:left-1/2 sm:-translate-x-1/2 p-4 px-8 flex justify-between gap-3 sm:gap-6 fixed bottom-0 w-full">
       <a
         onClick={() => {
           setNavigation('Home');
@@ -23,6 +24,27 @@ const Navbar = () => {
           }`}
         >
           Home
+        </p>
+      </a>
+
+      <a
+        onClick={() => {
+          setNavigation('about');
+        }}
+        href="#about"
+        className="flex flex-col justify-center items-center gap-1"
+      >
+        <BsFillPersonFill
+          className={`text-[28px] ${
+            navigation === 'about' ? 'text-[#3385ff]' : 'text-[#9ca3af]'
+          }`}
+        />
+        <p
+          className={`${
+            navigation === 'about' ? 'text-blueAccent' : 'text-gray-400'
+          }`}
+        >
+          About
         </p>
       </a>
 
@@ -68,21 +90,22 @@ const Navbar = () => {
 
       <a
         onClick={() => {
-          setNavigation('Experience');
+          setNavigation('Contact');
         }}
-        href="#experience"
-        className="flex flex-col justify-center items-center gap-1"
+        href="#Contact"
+        className="flex flex-col justify-center items-center "
       >
-        <Briefcase
-          size={28}
-          color={navigation === 'Experience' ? '#3385ff' : '#9ca3af'}
+        <FiMail
+          className={`${
+            navigation === 'Contact' ? 'text-[#3385ff]' : 'text-[#9ca3af]'
+          } text-[32px]`}
         />
         <p
           className={`${
-            navigation === 'Experience' ? 'text-blueAccent' : 'text-gray-400'
+            navigation === 'Contact' ? 'text-blueAccent' : 'text-gray-400'
           }`}
         >
-          Experience
+          Contact
         </p>
       </a>
     </div>

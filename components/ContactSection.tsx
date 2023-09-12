@@ -1,10 +1,13 @@
-import React from 'react'
+import React from 'react';
 import { BsGithub, BsInstagram, BsLinkedin } from 'react-icons/bs';
 import { FiMail } from 'react-icons/fi';
 
 const ContactSection = () => {
   return (
-    <div className="p-6 bg-secondEle rounded-xl flex items-center flex-col gap-6 overflow-x-hidden">
+    <div
+      id="Contact"
+      className="p-6 bg-secondEle rounded-xl flex items-center flex-col gap-6 overflow-x-hidden"
+    >
       <div className="w-full">
         <div className="text-[#97979e] font-bold">
           {/* eslint-disable-next-line react/no-unescaped-entities*/}
@@ -37,6 +40,6 @@ const ContactSection = () => {
       </div>
     </div>
   );
-}
+};
 
-export default ContactSection
+export default ContactSection;

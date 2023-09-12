@@ -13,12 +13,13 @@ import {
   SiRedux,
 } from 'react-icons/si';
 
+
 import { FaReact, FaHtml5, FaCss3, FaJs } from 'react-icons/fa';
 import { TbBrandNextjs } from 'react-icons/tb';
 
 const AboutMe = () => {
   return (
-    <div className="flex gap-8 flex-col items-center">
+    <div id='about' className="flex gap-8 flex-col items-center">
       <div className="flex flex-col items-start justify-start w-full">
         <div className="text-[#97979e] font-bold">Introduction</div>
         <div className="font-bold text-3xl">About Me</div>

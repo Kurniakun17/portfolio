@@ -1,4 +1,5 @@
 import React from 'react';
+import { ChevronFirst } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -8,14 +9,13 @@ const HeroSection = () => {
           <p className="text-[#97979e] font-bold">SATURDAY 9 SEPTEMBER</p>
           <h2 className="font-bold text-3xl">Home</h2>
         </div>
-        <div className="h-12 w-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-[500px]"></div>
+        <ChevronFirst size={48} color="#007CF0" />
       </div>
       <div id="home" className="p-6 bg-secondEle rounded-xl">
         <div className="flex flex-col gap-4">
           <div>
             <h1 className="font-bold text-3xl">Hi,</h1>
             <div className="flex">
-              {/* <Test /> */}
               <h2 className="font-bold text-3xl items-center relative">
                 I&apos;m{' '}
                 <span className="relative bg-clip-text text-transparent bg-gradient-to-br from-[#007CF0] to-[#00DFD8]">
