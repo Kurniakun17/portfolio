@@ -12,7 +12,7 @@ const Project = ({
 }) => {
   return (
     <div className={`flex flex-col justify-end rounded-xl max-w-[500px]`}>
-      <div className="flex overflow-x-auto snap-x snap-mandatory rounded-t-xl overflow-hidden">
+      <div className="flex overflow-x-auto snap-x snap-mandatory rounded-t-xl overflow-hidden ">
         <Image
           src="https://picsum.photos/1080"
           className="snap-center aspect-[16/10] object-cover h-full"

@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 const Navbar = () => {
   const [navigation, setNavigation] = useState('Home');
   return (
-    <div className="glass z-[100] p-4 px-12 flex justify-between gap-3 fixed bottom-0 w-full">
+    <div className="glass z-[100] sm:bottom-8 sm:w-[450px] sm:rounded-full sm:left-1/2 sm:-translate-x-1/2 p-4 px-12 flex justify-between gap-3 sm:gap-6 fixed bottom-0 w-full">
       <a
         onClick={() => {
           setNavigation('Home');
@@ -45,7 +45,7 @@ const Navbar = () => {
           Projects
         </p>
       </a>
-      
+
       <a
         onClick={() => {
           setNavigation('Skills');

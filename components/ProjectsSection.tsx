@@ -4,8 +4,8 @@ import Project from './Project';
 
 const ProjectsSection = () => {
   return (
-    <div id="projects" className="  rounded-xl flex flex-col gap-6">
-      <div>
+    <div id="projects" className="rounded-xl flex flex-col items-center gap-6">
+      <div className="flex flex-col justify-start items-start w-full">
         <div className="text-[#97979e] font-bold">Previous</div>
         <div className="font-bold text-3xl">Projects</div>
       </div>

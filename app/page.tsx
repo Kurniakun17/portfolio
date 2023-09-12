@@ -6,11 +6,10 @@ import HeroSection from '@/components/HeroSection';
 import AboutMe from '@/components/AboutMe';
 
 const Home = () => {
-
   return (
-    <div className="p-6 pb-[112px] flex flex-col gap-6">
+    <div className="p-6 pb-[112px] sm:pb-40 flex flex-col gap-6 sm:gap-12">
       <HeroSection />
-      <AboutMe/>
+      <AboutMe />
       <ProjectsSection />
       <SkillsSection />
       <ContactSection />
