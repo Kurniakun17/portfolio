@@ -6,7 +6,7 @@ const HeroSection = () => {
     <div className="flex flex-col gap-4">
       <div className="flex justify-between items-end">
         <div>
-          <p>SATURDAY 9 SEPTEMBER</p>
+          <p className="text-[#97979e] font-bold">SATURDAY 9 SEPTEMBER</p>
           <h2 className="font-bold text-3xl">Home</h2>
         </div>
         <div className="h-12 w-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-[500px]"></div>
