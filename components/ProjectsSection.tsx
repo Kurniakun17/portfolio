@@ -15,7 +15,11 @@ const ProjectsSection = () => {
         description="a quiz web app"
         link="https://quizifyyy.vercel.app"
       />
-      <Project title="Yoomy" description="an online restaurant guide" link="" />
+      <Project
+        title="Yoomy"
+        description="an online restaurant guide"
+        link="https://yoomy.vercel.app"
+      />
       <Project
         title="Daly Content Agency"
         description="Company landing page"
