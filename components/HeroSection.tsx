@@ -2,11 +2,24 @@ import React from 'react';
 import { ChevronFirst } from 'lucide-react';
 
 const HeroSection = () => {
+  const date = new Date();
+  const weekday = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(
+    date
+  );
+  const dateNum = new Intl.DateTimeFormat('en-US', { day: 'numeric' }).format(
+    date
+  );
+  const month = new Intl.DateTimeFormat('en-US', { month: 'long' }).format(
+    date
+  );
+
+  const formattedDate = `${weekday} ${dateNum} ${month}`;
+
   return (
     <div className="flex flex-col gap-4">
       <div className="flex justify-between items-end">
         <div>
-          <p className="text-[#97979e] font-bold">SATURDAY 9 SEPTEMBER</p>
+          <p className="text-[#97979e] font-bold">{formattedDate}</p>
           <h2 className="font-bold text-3xl">Home</h2>
         </div>
         <ChevronFirst size={48} color="#007CF0" />
