@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import { BsGithub, BsInstagram, BsLinkedin } from 'react-icons/bs';
 import { FiMail } from 'react-icons/fi';
@@ -18,7 +19,12 @@ const ContactSection = () => {
       <div className="flex justify-center">
         <div className="relative">
           <div className="absolute pulse-container rounded-full blur-[2px] inset-0 scale-y-[60%] bg-gradient-to-r origin-center from-[#007CF0]/40 to-[#00DFD8]/40  "></div>
-          <button className="relative shadow-none justify-self-center w-fit flex items-center gap-2 px-4 h-fit py-1  duration-200 bg-gradient-to-r from-[#007CF0] to-[#00DFD8] rounded-full">
+          <button
+            onClick={() => {
+              window.location.href = 'mailto:kurniakharisma17@gmail.com';
+            }}
+            className="relative shadow-none justify-self-center w-fit flex items-center gap-2 px-4 h-fit py-1  duration-200 bg-gradient-to-r from-[#007CF0] to-[#00DFD8] rounded-full"
+          >
             Say Hi <FiMail />
           </button>
         </div>
