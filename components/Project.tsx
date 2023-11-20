@@ -2,34 +2,44 @@ import Image from 'next/image';
 import React from 'react';
 
 const Project = ({
+  src,
   title,
   description,
   link,
+  isImageTop = false,
 }: {
+  src: string;
   title: string;
   description: string;
   link: string;
+  isImageTop?: boolean;
 }) => {
   return (
     <div className={`flex flex-col justify-end rounded-xl max-w-[500px]`}>
       <div className="flex overflow-x-auto snap-x snap-mandatory rounded-t-xl overflow-hidden ">
         <Image
-          src="https://picsum.photos/1080"
-          className="snap-center aspect-[16/10] object-cover h-full"
+          src={`${src}1.png`}
+          className={`snap-center aspect-[16/10] ${
+            isImageTop && 'object-top'
+          } object-cover h-full`}
           alt="test"
           height={1080}
           width={1080}
         />
         <Image
-          src="https://picsum.photos/1080"
-          className="snap-center aspect-[16/10] object-cover h-full"
+          src={`${src}2.png`}
+          className={`snap-center aspect-[16/10] ${
+            isImageTop && 'object-top'
+          } object-cover h-full`}
           alt="test"
           height={1080}
           width={1080}
         />
         <Image
-          src="https://picsum.photos/1080"
-          className="snap-center  aspect-[16/10] object-cover h-full"
+          src={`${src}3.png`}
+          className={`snap-center aspect-[16/10] ${
+            isImageTop && 'object-top'
+          } object-cover h-full`}
           alt="test"
           height={1080}
           width={1080}

@@ -21,7 +21,7 @@ html {
 }
 
 *::-webkit-scrollbar {
-  /* background-color: transparent; */
+  background-color: transparent;
   height: 1px;
 }
 
@@ -59,6 +59,7 @@ html {
 
 .pulse-container {
   animation: pulse 3s infinite ease-out;
+  animation-delay: 0.5s;
 }
 
 @keyframes pulse {

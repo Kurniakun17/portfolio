@@ -11,21 +11,27 @@ const ProjectsSection = () => {
       </div>
 
       <Project
+        src="/quizifyyy"
         title="Quizifyyy"
         description="a quiz web app"
         link="https://quizifyyy.vercel.app"
       />
       <Project
+        src="/yoomy"
         title="Yoomy"
         description="an online restaurant guide"
         link="https://yoomy.vercel.app"
       />
       <Project
+        src="/daly"
         title="Daly Content Agency"
+        isImageTop
         description="Company landing page"
         link="https://www.dalycontentagency.com/"
       />
       <Project
+        src="/ics"
+        isImageTop
         title="Interactive Comment Section"
         description="a reddit-like comment section"
         link="https://interactive-comment-section-kurni.vercel.app/home"
