@@ -1,5 +1,4 @@
 'use client';
-
 import React from 'react';
 import { ChevronFirst } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -20,23 +19,61 @@ const HeroSection = () => {
   return (
     <div className="flex flex-col gap-4">
       <div className="flex justify-between items-end">
-        <div>
-          <p className="text-[#97979e] font-bold">{formattedDate}</p>
-          <h2 className="font-bold text-3xl">Home</h2>
+        <div className="overflow-hidden">
+          <motion.p
+            whileInView="visible"
+            initial="hidden"
+            variants={{
+              hidden: { opacity: 0, y: 20 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="text-[#97979e] font-bold"
+          >
+            {formattedDate}
+          </motion.p>
+          <motion.h2
+            whileInView="visible"
+            initial="hidden"
+            variants={{
+              hidden: { opacity: 0, x: 70 },
+              visible: { opacity: 1, x: 0 },
+            }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="font-bold text-3xl"
+          >
+            Home
+          </motion.h2>
         </div>
-        <ChevronFirst size={48} color="#007CF0" />
+        <motion.div
+          initial={{ opacity: 0, y: -70 }}
+          animate={{ opacity: 1, y: 0 }}
+          whileHover={{ rotate: 720 }}
+          transition={{ duration: 1, type: 'tween' }}
+          className="hover:cursor-pointer"
+        >
+          <ChevronFirst size={48} color="#007CF0" />
+        </motion.div>
       </div>
-      <div id="home" className="p-6 bg-secondEle rounded-xl">
-        <div className="flex flex-col gap-4">
+      <motion.div
+        initial={{ clipPath: 'inset(0% 100% 0% 0%)' }}
+        animate={{ clipPath: 'inset(0% 0% 0% 0%)' }}
+        transition={{ duration: 2, type:"spring" }}
+        id="home"
+        className="p-6 bg-secondEle rounded-xl"
+      >
+        <div className="flex flex-col gap-4 overflow-hidden">
           <div>
             <motion.h1
               whileInView="visible"
               initial="hidden"
               variants={{
-                hidden: { opacity: 0, y: 70 },
+                hidden: { opacity: 0, y: 60 },
                 visible: { opacity: 1, y: 0 },
               }}
-              transition={{ delay: 0.1, duration: 0.3 }}
+              transition={{ delay: 0.1, duration: 1 }}
               viewport={{ once: true }}
               className="font-bold text-3xl"
             >
@@ -47,18 +84,24 @@ const HeroSection = () => {
                 whileInView="visible"
                 initial="hidden"
                 variants={{
-                  hidden: { opacity: 0, y: 70 },
+                  hidden: { opacity: 0, y: 100 },
                   visible: { opacity: 1, y: 0 },
                 }}
-                transition={{ delay: 0.3, duration: 0.3 }}
+                transition={{  duration: 1 }}
                 viewport={{ once: true }}
-                className="font-bold text-3xl items-center relative"
+                className="font-bold text-3xl flex gap-2 items-end justify-end relative"
               >
-                I&apos;m{' '}
-                <span className="relative bg-clip-text text-transparent bg-gradient-to-br from-[#007CF0] to-[#00DFD8]">
-                  Kurnia Kharisma.{' '}
-                </span>
-                <div className="inline-block translate-y-[4px] h-8 w-[3px] bg-gradient-to-br from-[#007CF0] to-[#00DFD8] typemark "></div>
+                <p>I&apos;m</p>
+                <motion.div
+                  whileHover={{ scale: 1.2, x: 30, y: -1 }}
+                  transition={{ type: 'tween', duration: 0.2 }}
+                  className="hover:cursor-pointer"
+                >
+                  <span className="relative bg-clip-text text-transparent bg-gradient-to-br from-[#007CF0] to-[#00DFD8]">
+                    Kurnia Kharisma.{' '}
+                  </span>
+                  <div className="inline-block translate-y-[4px] h-8 w-[3px] bg-gradient-to-br from-[#007CF0] to-[#00DFD8] typemark "></div>
+                </motion.div>
               </motion.div>
             </div>
           </div>
@@ -66,10 +109,10 @@ const HeroSection = () => {
             whileInView="visible"
             initial="hidden"
             variants={{
-              hidden: { opacity: 0, x: 70 },
+              hidden: { opacity: 0, x: -70 },
               visible: { opacity: 1, x: 0 },
             }}
-            transition={{ delay: 0.5, duration: 0.3 }}
+            transition={{ delay:0.5, duration: 1 }}
             viewport={{ once: true }}
             className="text-[#97979e]"
           >
@@ -78,7 +121,7 @@ const HeroSection = () => {
             website, native application, and multi-platform application.
           </motion.p>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

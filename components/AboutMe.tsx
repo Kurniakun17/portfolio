@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
 import {
@@ -12,23 +14,56 @@ import {
   SiJasmine,
   SiRedux,
 } from 'react-icons/si';
-
 import { FaReact, FaHtml5, FaCss3, FaJs } from 'react-icons/fa';
 import { TbBrandNextjs } from 'react-icons/tb';
-
+import { motion } from 'framer-motion';
 const AboutMe = () => {
   return (
     <div id="about" className="flex gap-8 flex-col items-center">
       <div className="flex flex-col items-start justify-start w-full">
-        <div className="text-[#97979e] font-bold">Introduction</div>
-        <div className="font-bold text-3xl">About Me</div>
+        <motion.p
+          whileInView="visible"
+          initial="hidden"
+          variants={{
+            hidden: { opacity: 0, y: 70 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          transition={{ delay: 0.3, duration: 0.3 }}
+          viewport={{ once: true }}
+          className="text-[#97979e] font-bold"
+        >
+          Introduction
+        </motion.p>
+        <motion.p
+          whileInView="visible"
+          initial="hidden"
+          variants={{
+            hidden: { opacity: 0, x: 70 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          transition={{ delay: 0.5, duration: 0.3 }}
+          viewport={{ once: true }}
+          className="font-bold text-3xl"
+        >
+          About Me
+        </motion.p>
       </div>
 
       <div className="flex flex-col justify-center items-center gap-8">
         <div className="w-[200px] ">
           <div className="mt-12">
             <div className="relative group">
-              <div className="absolute aspect-square left-1/2 -translate-x-1/2 h-[220px] pulse-container rounded-full blur-[2px] inset-0  bg-gradient-to-r origin-center from-[#007CF0]/40 to-[#00DFD8]/40  "></div>
+              <motion.div
+                // whileInView="visible"
+                // initial="hidden"
+                // variants={{
+                //   hidden: { opacity: 0, scale: 0 },
+                //   visible: { opacity: 1, scale: 1 },
+                // }}
+                // transition={{ duration: 0.3 }}
+                // viewport={{ once: true }}
+                className="absolute aspect-square left-1/2 -translate-x-1/2 h-[220px] pulse-container rounded-full blur-[2px] inset-0  bg-gradient-to-r origin-center from-[#007CF0]/40 to-[#00DFD8]/40  "
+              ></motion.div>
               <Image
                 width={1080}
                 height={1080}
@@ -62,8 +97,28 @@ const AboutMe = () => {
           </div>
         </div>
 
-        <div className="p-6 bg-secondEle rounded-xl">
-          <p className="text-[#97979e]">
+        <motion.div
+          whileInView="visible"
+          initial="hidden"
+          variants={{
+            hidden: { clipPath: 'inset(0% 100% 0% 0%)' },
+            visible: { clipPath: 'inset(0% 0% 0% 0%)' },
+          }}
+          viewport={{ once: true }}
+          transition={{ duration: 2, type: 'spring', delay: 0.5 }}
+          className="p-6 bg-secondEle rounded-xl"
+        >
+          <motion.p
+            whileInView="visible"
+            initial="hidden"
+            variants={{
+              hidden: { opacity: 0, y: 70 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            transition={{ duration: 2, type: 'spring', delay: 0.5 }}
+            viewport={{ once: true }}
+            className="text-[#97979e]"
+          >
             I am currently a{' '}
             <span className="font-bold">Frontend Developer</span> at{' '}
             <a
@@ -77,8 +132,8 @@ const AboutMe = () => {
             I&apos;m interested in following the developments of any
             technologies that&apos;s related to software engineering. I also
             make a content on my instagram and play video games .
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
       </div>
     </div>
   );

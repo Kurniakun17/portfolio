@@ -59,7 +59,7 @@ html {
 
 .pulse-container {
   animation: pulse 3s infinite ease-out;
-  animation-delay: 0.5s;
+  /* animation-delay: 0.5s; */
 }
 
 @keyframes pulse {
