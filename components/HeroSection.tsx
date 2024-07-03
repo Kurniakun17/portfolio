@@ -114,11 +114,11 @@ const HeroSection = () => {
             }}
             transition={{ delay: 0.5, duration: 1 }}
             viewport={{ once: true }}
-            className="text-[#97979e]"
+            className="text-[#97979e] text-xs sm:text-base"
           >
-            a Software engineer and UI/UX Designer based in Indonesia. I have a
+            a Software engineer based in Indonesia. I have a
             great interest in full-stack development, either it&apos;s a
-            website, native application, and multi-platform application.
+            website, iOS Development, and multi-platform application.
           </motion.p>
         </div>
       </motion.div>
