@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 import {
   SiTailwindcss,
   SiExpress,
@@ -13,10 +13,10 @@ import {
   SiNodedotjs,
   SiJasmine,
   SiRedux,
-} from 'react-icons/si';
-import { FaReact, FaHtml5, FaCss3, FaJs } from 'react-icons/fa';
-import { TbBrandNextjs } from 'react-icons/tb';
-import { motion } from 'framer-motion';
+} from "react-icons/si";
+import { FaReact, FaHtml5, FaCss3, FaJs } from "react-icons/fa";
+import { TbBrandNextjs } from "react-icons/tb";
+import { motion } from "framer-motion";
 const AboutMe = () => {
   return (
     <div id="about" className="flex gap-8 flex-col items-center">
@@ -101,11 +101,11 @@ const AboutMe = () => {
           whileInView="visible"
           initial="hidden"
           variants={{
-            hidden: { clipPath: 'inset(0% 100% 0% 0%)' },
-            visible: { clipPath: 'inset(0% 0% 0% 0%)' },
+            hidden: { clipPath: "inset(0% 100% 0% 0%)" },
+            visible: { clipPath: "inset(0% 0% 0% 0%)" },
           }}
           viewport={{ once: true }}
-          transition={{ duration: 2, type: 'spring', delay: 0.5 }}
+          transition={{ duration: 2, type: "spring", delay: 0.5 }}
           className="p-6 bg-secondEle rounded-xl"
         >
           <motion.p
@@ -115,23 +115,22 @@ const AboutMe = () => {
               hidden: { opacity: 0, y: 70 },
               visible: { opacity: 1, y: 0 },
             }}
-            transition={{ duration: 2, type: 'spring', delay: 0.5 }}
+            transition={{ duration: 2, type: "spring", delay: 0.5 }}
             viewport={{ once: true }}
             className="text-[#97979e]"
           >
-            I am currently a{' '}
-            <span className="font-bold">Frontend Developer</span> at{' '}
+            I am currently a{" "}
+            <span className="font-bold">Junior iOS Develoepr</span> at{" "}
             <a
-              href="https://www.pharos.co.id/"
+              href="https://developeracademy.apps.binus.ac.id/"
               className="font-bold text-blue-500 hover:text-blue-400 duration-300"
             >
-              PT Pharos Indonesia
+              Apple Developer Academy@Binus
             </a>
             . At the same time, I am taking a computer science degree at UPN
             Veteran Jakarta as an undergraduate who&apos;s now in the 3rd year.
             I&apos;m interested in following the developments of any
-            technologies that&apos;s related to software engineering. I also
-            make a content on my instagram and play video games .
+            technologies that&apos;s related to software engineering.
           </motion.p>
         </motion.div>
       </div>

@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
+import React from "react";
 
 const Project = ({
   src,
@@ -20,16 +20,17 @@ const Project = ({
         <Image
           src={`${src}1.png`}
           className={`snap-center aspect-[16/10] ${
-            isImageTop && 'object-top'
-          } object-cover h-full`}
+            isImageTop && "object-top"
+          } object-cover h-full w-full`}
           alt="test"
           height={1080}
           width={1080}
         />
+
         <Image
           src={`${src}2.png`}
           className={`snap-center aspect-[16/10] ${
-            isImageTop && 'object-top'
+            isImageTop && "object-top"
           } object-cover h-full`}
           alt="test"
           height={1080}
@@ -38,7 +39,7 @@ const Project = ({
         <Image
           src={`${src}3.png`}
           className={`snap-center aspect-[16/10] ${
-            isImageTop && 'object-top'
+            isImageTop && "object-top"
           } object-cover h-full`}
           alt="test"
           height={1080}
