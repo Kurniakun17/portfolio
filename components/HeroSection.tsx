@@ -114,7 +114,7 @@ const HeroSection = () => {
             }}
             transition={{ delay: 0.5, duration: 1 }}
             viewport={{ once: true }}
-            className="text-[#97979e] text-xs sm:text-base"
+            className="text-[#97979e] text-sm sm:text-base"
           >
             a Software engineer based in Indonesia. I have a
             great interest in full-stack development, either it&apos;s a
