@@ -1,9 +1,10 @@
-import React from 'react';
-import SkillsSection from '@/components/SkillsSection';
-import ContactSection from '@/components/ContactSection';
-import ProjectsSection from '@/components/ProjectsSection';
-import HeroSection from '@/components/HeroSection';
-import AboutMe from '@/components/AboutMe';
+import React from "react";
+import SkillsSection from "@/sections/SkillsSection";
+import ContactSection from "@/sections/ContactSection";
+import ProjectsSection from "@/sections/ProjectsSection";
+import HeroSection from "@/sections/HeroSection";
+import WithLove from "@/sections/WithLove";
+import AboutMe from "@/sections/AboutMe";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <ProjectsSection />
       <SkillsSection />
       <ContactSection />
+      <WithLove />
     </div>
   );
 };

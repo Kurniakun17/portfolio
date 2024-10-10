@@ -1,6 +1,6 @@
-import React from 'react';
-import Marquee from 'react-fast-marquee';
-import SkillChild from './SkillChild';
+import React from "react";
+import Marquee from "react-fast-marquee";
+import SkillChild from "../components/SkillChild";
 
 const SkillsSection = () => {
   const css = `.marquee-container {

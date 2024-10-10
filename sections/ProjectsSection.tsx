@@ -1,6 +1,6 @@
-import React from 'react';
-import AppPreview from './AppPreview';
-import Project from './Project';
+import React from "react";
+import AppPreview from "../components/AppPreview";
+import Project from "../components/Project";
 
 const ProjectsSection = () => {
   return (
